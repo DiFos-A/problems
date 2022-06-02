@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f3f3f3;
+}
 
 .container {
     max-width: 1180px;
@@ -36,6 +39,7 @@ header {
     font-weight: 500;
     font-size: 20px;
     color: #383838;
+    line-height: 30px;
 }
 
 
@@ -208,6 +212,35 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+
+
+
+.downer-block div{
+    margin-top: 60px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.downer-block p{
+    margin-left: 26px;
+    width: 60%;
+}
+
+.downer-block img{
+    width: 7%;
+}
+.one img{
+    width: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
 .down-block p{
     margin-left: 26px;
     width: 470px;
@@ -215,8 +248,9 @@ nav ul li a {
 .top-block{
     padding-top: 95px;
 }
-.our-exp {
-    background-color: #F8F8F8;
+.our-experiens {
+    background-color: #E5E5E5;
+    padding-bottom: 60px;
 }
 
 
@@ -233,8 +267,8 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 84px;
-    padding-bottom: 95px;
+    padding-top: 54px;
+    padding-bottom: 30px;
 }
 
 .why-it-is-important h1 {
@@ -243,6 +277,7 @@ nav ul li a {
     font-weight: 600;
     font-size: 45px;
     line-height: 68px;
+    padding-bottom: 10px;
 }
 
 .why-it-is-important p {
@@ -252,6 +287,10 @@ nav ul li a {
     font-size: 20px;
     line-height: 30px;
     max-width: 700px;
+}
+
+.left-block2{
+    margin-bottom: 100px;
 }
 
 
@@ -271,6 +310,7 @@ nav ul li a {
 }
 
 .userform{
+    padding-top: 125px;
     background: #E5E5E5;
     padding-bottom: 125px;
 }
@@ -468,7 +508,7 @@ nav ul li a {
 
 footer{
         background-color: #F8F8F8;
-        padding-bottom: 84px;
+        padding-bottom: 34px;
         padding-top: 59px;  
 }
 
