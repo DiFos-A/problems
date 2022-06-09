@@ -70,7 +70,6 @@ nav ul li a {
 .eye {
     cursor: pointer;
     border: none;
-    background-color: #E5E5E5;
     vertical-align: middle;
     margin-left: 22px;
 }
@@ -240,12 +239,24 @@ nav ul li a {
     max-width: 532px;
 }
 
+.solve {
+    padding-top: 131px;
+    padding-bottom: 143px;
+}
+
 .solve h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 45px;
     line-height: 68px;
     color: #383838;
+    margin-bottom: 29px;
+}
+
+.help {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .help h2 {
@@ -266,7 +277,11 @@ nav ul li a {
 
 }
 
-.adaptation {
+.adaptation, .technologies {
+    margin-bottom: 29px;
+}
+
+.adaptation, .technologies, .violent, .Notunderstand {
     display: inline-block;
     padding: 39px 28px;
     width: 49%;
@@ -284,24 +299,24 @@ nav ul li a {
     transition: 1s;
 }
 
-.adaptation img {
+.adaptation img, .technologies img, .violent img, .Notunderstand img {
     transition: 1s;
     opacity: 1;
 }
 
 
 
-.adaptation:hover img {
+.adaptation:hover img, .technologies:hover img, .violent:hover img, .Notunderstand:hover img {
     opacity: 0;
     position: relative;
     z-index: -1;
 }
 
-.adaptation:hover .hidden {
+.adaptation:hover .hidden, .technologies:hover .hidden, .violent:hover .hidden, .Notunderstand:hover .hidden {
     bottom: 0;
 }
 
-.adaptation a {
+.adaptation a, .technologies a, .violent a, .Notunderstand a {
     display: block;
     margin-bottom: 39px;
     margin-top: 10px;
@@ -314,7 +329,7 @@ nav ul li a {
 }
 
 
-.adaptation a::after {
+.adaptation a::after, .technologies a::after, .violent a::after, .Notunderstand a::after {
     display: inline-block;
     content: url(../images/arrow.svg);
     margin-left: 10px;
@@ -377,6 +392,11 @@ nav ul li a {
     max-width: 480px;
 }
 
+.data {
+    padding-top: 113px;
+    padding-bottom: 105px;
+}
+
 .data h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -391,6 +411,7 @@ nav ul li a {
     font-size: 30px;
     line-height: 45px;
     color: #505050;
+    margin-bottom: 51px;
 }
 
 
@@ -442,6 +463,29 @@ nav ul li a {
 .problem-not-found form input {
     display: block;
     background-color: #f3f3f3;
+}
+
+
+.problem-not-found label input:focus {
+    border: 2px solid #FF5C00;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    outline: 2px solid #ececec;
+}
+
+.problem-not-found label textarea:focus {
+    border: 2px solid #FF5C00;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    outline: 2px solid #ececec;
 }
 
 .custom-checkbox input {
@@ -509,4 +553,59 @@ nav ul li a {
     width: 100%;
     height: 268px;
     background-color: #f3f3f3;
+}
+
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.foot h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #383838;
+    text-decoration: none;
+}
+
+.hotline {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #505050;
+}
+
+.email {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #505050;
+}
+
+
+.foot a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #505050;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #F8F8F8;
+    padding-bottom: 34px;
+    padding-top: 59px;
+}
+
+.eyef {
+    cursor: pointer;
+    border: none;
+    background-color: #F8F8F8;
+    vertical-align: middle;
+    margin-left: 22px;
 }
