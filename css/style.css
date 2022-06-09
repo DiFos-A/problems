@@ -577,6 +577,8 @@ nav ul li a {
     font-size: 25px;
     line-height: 38px;
     color: #505050;
+    margin-bottom: 26px;
+    margin-top: 10px;
 }
 
 .email {
