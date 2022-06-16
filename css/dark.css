@@ -1,0 +1,22 @@
+body.dark {
+    background-color: #383838;
+    color: #fff;
+    outline: 2px solid #383838;
+}
+
+
+body.dark .background {
+    background-color: #383838;
+}
+
+body.dark label input:focus, body.dark label textarea:focus {
+    outline: 2px solid #383838;
+}
+
+body.dark p, body.dark h1, body.dark h2, body.dark a, body.dark label, body.dark input::placeholder, body.dark textarea::placeholder {
+    color: #fff;
+}
+
+body.dark form label input, body.dark textarea {
+    background-color: #383838;
+}
