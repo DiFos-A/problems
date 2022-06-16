@@ -404,7 +404,7 @@ nav ul li a {
     color: #383838;
 }
 
-.data h2 {
+.data .statement {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -445,6 +445,7 @@ nav ul li a {
 
 .problem-not-found .custom-checkbox input {
     vertical-align: top;
+    width: 30px;
 }
 
 
@@ -598,7 +599,6 @@ nav ul li a {
 }
 
 footer {
-    background-color: #F8F8F8;
     padding-bottom: 34px;
     padding-top: 59px;
 }

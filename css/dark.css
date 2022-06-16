@@ -20,3 +20,23 @@ body.dark p, body.dark h1, body.dark h2, body.dark a, body.dark label, body.dark
 body.dark form label input, body.dark textarea {
     background-color: #383838;
 }
+
+body.dark .problem-not-found .custom-checkbox label {
+    color: #fff;
+}
+
+body.dark .data .statement {
+    color: #fff;
+}
+
+body.dark .footer {
+    background-color: #383838;
+}
+
+body.dark .Notunderstand, body.dark .violent, body.dark .technologies, body.dark .adaptation {
+    background-color: #383838;
+}
+
+body.dark .eyef {
+    background-color: #383838;
+}
