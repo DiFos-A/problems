@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="problems.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <title>Problems</title>
 </head>
 
@@ -13,7 +17,7 @@
     <header>
         <div class="container flex-parent">
             <div class="logo"><a href="#">Проблемы поколений</a></div>
-            <div>
+            <div class="navigation">
                 <nav>
                     <ul>
                         <li><a href="#">Главная страница</a></li>
@@ -21,10 +25,58 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-                <button class="eye"><img src="images/eye.svg" alt="Глаз"></button>
+
 
             </div>
+            <button class="eye"><img src="images/eye.svg" alt="Глаз"></button>
         </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="settings">
+            <div>
+                <span>Цвет шрифта и фона</span>
+                <button class="standart active">Стандартный</button>
+                <button class="inverse unactive">Инверсия</button>
+            </div>
+            <div>
+                <span>Расстояние между строками</span>
+                <button class="recomend active">Рекомендуемое</button>
+                <button class="big unactive">Большое</button>
+                <button class="small unactive">Маленькое</button>
+            </div>
+            <div>
+                <span>Расстояние между буквами</span>
+                <button class="active advise">Рекомендуемое</button>
+                <button class="bigger unactive">Большое</button>
+                <button class="smaller unactive">Маленькое</button>
+            </div>
+            <div>
+                <span>Шрифт</span>
+                <button class="active withoutSerifs">Без засечек</button>
+                <button class="unactive withSerifs">С засечками</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </header>
+
+    <main>
+
+
 
         <div class="container">
             <div class="problems">
@@ -38,42 +90,47 @@
                 </div>
             </div>
         </div>
-    </header>
 
 
 
-    <main>
+
+
         <div class="our-exp">
             <div class="container">
                 <div class="who-we-are">
                     <div class="top-block">
-                        <h1>Почему так происходит?</h1>
+                        <h2>Почему так происходит?</h2>
                         <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники
                             технического прогресса освещают чрезвычайно :
                         </p>
                     </div>
                     <div class="down-block">
-                        <img src="images/1.svg" alt="1">
-                        <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники
-                            технического прогресса освещают чрезвычайно .
-                        </p>
-                        <img src="images/2.svg" alt="2">
-                        <p>Являясь всего лишь частью общей картины, ключевые особенности структуры проекта преданы
-                            социально-демократической анафеме.</p>
+                        <div class="down-block_img"><img src="images/1.svg" alt="1">
+                        </div>
+
+                        <div class="down-block_p">
+                            <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные
+                                участники
+                                технического прогресса освещают чрезвычайно .
+                            </p>
+                        </div>
+
+                        <div class="down-block_img"><img src="images/2.svg" alt="2"></div>
+                        <div class="down-block_p">
+                            <p>Являясь всего лишь частью общей картины, ключевые особенности структуры проекта преданы
+                                социально-демократической анафеме.</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-
-
-
-
         <div class="our-experiens">
             <div class="container">
                 <div class="who-we-are">
                     <div class="top-block">
-                        <h1>Как можно решить эту проблему?</h1>
+                        <h2>Как можно решить эту проблему?</h2>
                         <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники
                             технического прогресса освещают чрезвычайно .
                         </p>
@@ -85,13 +142,13 @@
                                 участники технического прогресса освещают чрезвычайно .
                             </p>
                         </div>
-                        <div>
+                        <div class="two">
                             <img src="images/2.svg" alt="2">
                             <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные
                                 участники технического прогресса освещают чрезвычайно .
                             </p>
                         </div>
-                        <div>
+                        <div class="three">
                             <img src="images/3.svg" alt="3">
                             <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные
                                 участники технического прогресса освещают чрезвычайно .
@@ -102,22 +159,15 @@
             </div>
         </div>
 
-
-
-
-
-
         <div class="white-background">
             <div class="container">
                 <div class="why-it-is-important">
                     <div class="left-block2">
-                        <h1>Почему это важно?</h1>
-                        <p>С каждым годом эта проблема всё развивается и развивается, мешая людям. Таким образом
-                            поколения
-                            постоянно сорятся и противостоят друг другу, что плохо сказывается на семейных отношения.
-                            Если
-                            не
-                            действовать сейчас - то проблема будет развиваться и дальше, что никому не нужно.</p>
+                        <h2>Почему это важно?</h2>
+                        <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники
+                            технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако
+                            конкретные выводы, разумеется, обнародованы. Для современного мира повышение уровня
+                            гражданского сознания не оставляет шанса.</p>
                     </div>
                     <div class="right-block2">
                         <img src="images/image 7.png" alt="questions">
@@ -127,7 +177,7 @@
         </div>
         <div class="userform">
             <div class="container data">
-                <h1>Не нашли решение своей проблемы?</h1>
+                <h2>Не нашли решение своей проблемы?</h2>
                 <h2>Оставьте заявку и мы поможем вам решить эту проблему</h2>
                 <div class="problem-not-found">
                     <div class="left-block3">
@@ -169,26 +219,28 @@
     </main>
 
 
-
-
     <footer>
         <div class="container foot">
             <div>
-                <h1>Проблемы поколений</h1>
+                <h2>Проблемы поколений</h2>
                 <p>Горячая линия <br> +375 (33) 345-84-94</p>
                 <p>problemy-pokoleniy@gmail.com</p>
             </div>
-            <div>
-                <a href="#">Главная страница</a>
-                <a href="#">Проблемы</a>
-                <a href="#">Контакты</a>
+            <div class="end">
+                <ul>
+                    <li><a href="#">Главная страница</a></li>
+                    <li><a href="#">Проблемы</a></li>
+                    <li><a href="#">Проблемы</a></li>
+                </ul>
                 <button class="eyef"><img src="images/eye.svg" alt="Глаз"></button>
+            
             </div>
-
         </div>
+    
+
     </footer>
 
-
+    <script src="script.js"></script>
 
 
 </body>

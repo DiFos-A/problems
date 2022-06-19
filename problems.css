@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f3f3f3;
+.visible {
+    display: block !important;
 }
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
 
 .container {
     max-width: 1180px;
@@ -29,6 +39,7 @@ header {
 
 .flex-parent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -66,7 +77,7 @@ ul p {
 nav ul li {
     list-style-type: none;
     vertical-align: middle;
-    margin-left: 40px;
+    margin-right: 50px;
 }
 
 nav ul li a {
@@ -78,6 +89,8 @@ nav ul li a {
 }
 
 .eye {
+    position: absolute;
+    right: 20px;
     cursor: pointer;
     border: none;
     background-color: #E5E5E5;
@@ -86,11 +99,13 @@ nav ul li a {
 }
 
 .settings {
-    position: absolute;
+    position: fixed;
+    right: 20px;
     background-color: #fff;
     padding: 53px 60px 17px 45px;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
+    display: none;
 }
 
 .settings div span {
@@ -131,10 +146,6 @@ nav ul li a {
     cursor: pointer
 }
 
-
-
-
-
 .settings button:active {
     background-color: #383838;
     padding: 10px 15px;
@@ -146,6 +157,7 @@ nav ul li a {
     line-height: 27px;
     cursor: pointer
 }
+
 
 
 
@@ -166,15 +178,8 @@ nav ul li a {
 }
 
 
-
-
-
-
-
-
-
 .left-side {
-    width: 495px;
+    width: 40%;
     margin-bottom: 174px;
 }
 
@@ -182,13 +187,15 @@ nav ul li a {
     margin-bottom: 129px;
 }
 
+.our-exp {
+    background-color: #f3f3f3;
+}
 
+.white-background {
+    background-color: #f3f3f3;
+}
 
-
-
-
-
-.who-we-are h1 {
+.who-we-are h2 {
     vertical-align: middle;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -205,73 +212,66 @@ nav ul li a {
     max-width: 906px;
 
 }
-.down-block{
+
+.down-block {
     margin-top: 60px;
     padding-bottom: 90px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
+.down-block .down-block_img {
+    width: 15%;
+}
 
 
+.down-block .down-block_p {
+    padding-left: 26px;
+    width: 35%;
+}
 
-
-
-.downer-block div{
+.downer-block div {
     margin-top: 60px;
     padding-bottom: 30px;
     display: flex;
     align-items: center;
 }
-.downer-block p{
+
+.downer-block p {
     margin-left: 26px;
     width: 60%;
 }
 
-.downer-block img{
+.downer-block img {
     width: 7%;
 }
-.one img{
+
+.one img {
     width: 3%;
     margin-left: 20px;
-    margin-right: 20px;
 }
 
-
-
-
-.down-block p{
-    margin-left: 26px;
-    width: 470px;
-}
-.top-block{
+.top-block {
     padding-top: 95px;
 }
+
 .our-experiens {
     background-color: #E5E5E5;
     padding-bottom: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .why-it-is-important {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 54px;
     padding-bottom: 30px;
 }
 
-.why-it-is-important h1 {
+.why-it-is-important h2 {
     vertical-align: middle;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -286,11 +286,15 @@ nav ul li a {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    max-width: 700px;
 }
 
-.left-block2{
+.left-block2 {
+    width: 80%;
     margin-bottom: 100px;
+}
+
+.right-block2 {
+    width: 20%;
 }
 
 
@@ -299,6 +303,7 @@ nav ul li a {
     content: url(../images/arrow.svg);
     margin-left: 10px;
 }
+
 .problem-not-found {
     display: flex;
     justify-content: space-between;
@@ -309,7 +314,7 @@ nav ul li a {
     max-width: 480px;
 }
 
-.userform{
+.userform {
     padding-top: 125px;
     background: #E5E5E5;
     padding-bottom: 125px;
@@ -343,7 +348,8 @@ nav ul li a {
     margin-bottom: 7px;
 }
 
-.problem-not-found form input, .problem-not-found form textarea  {
+.problem-not-found form input,
+.problem-not-found form textarea {
     width: 100%;
 }
 
@@ -363,6 +369,7 @@ nav ul li a {
 
 .problem-not-found .custom-checkbox input {
     vertical-align: top;
+    width: 00px;
 }
 
 
@@ -376,6 +383,9 @@ nav ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+.custom-checkbox input:checked span {
+    border: none;
+}
 
 .problem-not-found form input {
     display: block;
@@ -398,10 +408,7 @@ nav ul li a {
 }
 
 .custom-checkbox input:checked+span {
-    content: url(../images/agree.png);
-}
-
-.custom-checkbox input:checked {
+    content: url(images/agree.svg);
     border: none;
 }
 
@@ -424,7 +431,8 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-.full-name, .phone-or-email {
+.full-name,
+.phone-or-email {
     margin-bottom: 28px;
 }
 
@@ -451,36 +459,93 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    
+.left-block3 {
+    max-width: 50%;
 }
 
-.foot h1{
+
+.problem-not-found form input {
+    display: block;
+    background-color: #f3f3f3;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox span {
+    display: inline-block;
+    width: 6%;
+    height: 28px;
+    border: solid 1px #FF5C00;
+    border-radius: 6.5px;
+    cursor: pointer;
+}
+
+.custom-checkbox input:checked+span {
+    content: url(images/agree.svg);
+}
+
+
+.custom-checkbox input:checked {
+    border: none;
+}
+
+.problem-not-found form button {
+    border-radius: 50px;
+    border: none;
+    background-color: #FF5C00;
+    width: 100%;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+
+.full-name {
+    margin-bottom: 15px;
+}
+
+.full-name,
+.phone-or-email {
+    margin-bottom: 28px;
+}
+
+.custom-checkbox {
+    margin-bottom: 28px;
+}
+
+.your-problem {
+    margin-bottom: 20px;
+}
+
+.your-problem textarea {
+    border: 2px solid #FF5C00;
+    border-radius: 30px;
+    padding: 20px 30px 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 268px;
+    background-color: #f3f3f3;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.foot h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 25px;
@@ -488,7 +553,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.foot p{
+.foot p {
     margin-top: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -496,7 +561,7 @@ nav ul li a {
     color: #505050;
 }
 
-.foot a{
+.foot a {
     margin-top: 17px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -506,16 +571,123 @@ nav ul li a {
     padding-right: 40px;
 }
 
-footer{
-        background-color: #F8F8F8;
-        padding-bottom: 34px;
-        padding-top: 59px;  
+footer {
+    background-color: #F8F8F8;
+    padding-bottom: 34px;
+    padding-top: 59px;
 }
 
 .eyef {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
     border: none;
     background-color: #F8F8F8;
     vertical-align: middle;
     margin-left: 22px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1220px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media(max-width: 1120px) {
+    .left-side {
+        width: 60%;
+    }
+}
+
+@media(max-width: 960px) {
+    .problems {
+        flex-wrap: wrap;
+    }
+
+    .left-side {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .down-block .down-block_p {
+        width: 86%;
+        margin-bottom: 25px;
+    }
+
+    .down-block .down-block_img {
+        width: 13%;
+        margin-bottom: 25px;
+    }
+
+    .end {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 864px) {
+    .settings div button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .settings div span {
+        width: 100%;
+    }
+}
+
+@media(max-width: 860px) {
+    .right-block3 {
+        display: none;
+    }
+
+    .left-block3 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .right-block2 {
+        display: none;
+    }
+
+    .left-block2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header {
+        padding-bottom: 10px;
+    }
+
+    .downer-block p {
+        width: 85%;
+    }
+}
+
+@media(max-width: 821px) {
+    .navigation {
+        width: 100%;
+    }
+}
+
+@media(max-width: 560px) {
+    .right-side {
+        display: none;
+    }
+
+    nav ul li {
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 525px) {
+    .end ul li {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
