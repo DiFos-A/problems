@@ -1,0 +1,51 @@
+body.dark {
+    background-color: #383838;
+    color: #fff;
+    outline: 2px solid #383838;
+}
+
+
+body.dark .background {
+    background-color: #383838;
+}
+
+body.dark label input:focus, body.dark label textarea:focus {
+    outline: 2px solid #383838;
+}
+
+body.dark p, body.dark h1, body.dark h2, body.dark a, body.dark label, body.dark input::placeholder, body.dark textarea::placeholder {
+    color: #fff;
+}
+body.dark .settings span{
+    color: #000;
+}
+body.dark .eye{
+    background-color: #383838;
+}
+body.dark form label input, body.dark textarea {
+    background-color: #383838;
+}
+
+body.dark .problem-not-found .custom-checkbox label {
+    color: #fff;
+}
+
+body.dark .data .statement {
+    color: #fff;
+}
+
+body.dark footer, body.dark header, body.dark .our-exp, body.dark .our-experiens, body.dark .white-background, body.dark .userform{
+    background-color: #383838;
+}
+
+body.dark .Notunderstand, body.dark .violent, body.dark .technologies, body.dark .adaptation {
+    background-color: #383838;
+}
+
+body.dark .eyef {
+    background-color: #383838;
+}
+body.dark .eye, body.dark .eyef {
+    background-image: url(../images/whiteeye.svg);
+    background-color: #383838;
+}
