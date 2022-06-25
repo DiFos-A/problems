@@ -29,7 +29,7 @@ body.dark .data .statement {
     color: #fff;
 }
 
-body.dark .footer {
+body.dark footer {
     background-color: #383838;
 }
 
@@ -37,6 +37,22 @@ body.dark .Notunderstand, body.dark .violent, body.dark .technologies, body.dark
     background-color: #383838;
 }
 
-body.dark .eyef {
+
+
+body.dark form label {
+    color: #fff;
+}
+
+body.dark form input {
+   color: #fff;
+}
+
+body.dark .eye, body.dark .eyef {
+    background-image: url(../images/whiteeye.svg);
     background-color: #383838;
+}
+
+
+body.dark .settings span {
+    color: #383838;
 }

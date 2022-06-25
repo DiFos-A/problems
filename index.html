@@ -11,49 +11,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/serifs.css">
 </head>
 
-<body class="dark">
+<body>
 
     <header>
         <div class="container flex-parent">
             <div class="logo"><a href="#">Проблемы поколений</a></div>
-            <div>
+            <div class="nav-header">
                 <nav>
                     <ul>
                         <li><a href="#">Главная страница</a></li>
-                        <li><a href="#">Проблемы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#solve">Проблемы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
-                <button class="eye"><img src="images/eye.svg" alt="Глаз"></button>
+                <button class="eye"></button>
 
             </div>
         </div>
-        <!-- <div class="settings">
+        <div class="settings">
             <div>
                 <span>Цвет шрифта и фона</span>
-                <button class="active">Стандартный</button>
-                <button>Инверсия</button>
+                <button class="standart active">Стандартный</button>
+                <button class="inverse unactive">Инверсия</button>
             </div>
             <div>
                 <span>Расстояние между строками</span>
-                <button class="active">Рекомендуемое</button>
-                <button>Большое</button>
-                <button>Маленькое</button>
+                <button class="recomend active">Рекомендуемое</button>
+                <button class="big unactive">Большое</button>
+                <button class="small unactive">Маленькое</button>
             </div>
             <div>
                 <span>Расстояние между буквами</span>
-                <button class="active">Рекомендуемое</button>
-                <button>Большое</button>
-                <button>Маленькое</button>
+                <button class="active advise">Рекомендуемое</button>
+                <button class="bigger unactive">Большое</button>
+                <button class="smaller unactive">Маленькое</button>
             </div>
             <div>
                 <span>Шрифт</span>
-                <button class="active">Без засечек</button>
-                <button>С засечками</button>
+                <button class="active withoutSerifs">Без засечек</button>
+                <button class="unactive withSerifs">С засечками</button>
             </div>
-        </div> -->
+        </div>
         <div class="container">
             <div class="problems">
                 <div class="left-side">
@@ -88,16 +89,15 @@
             </div>
         </div>
         <div class="container">
-            <div class="solve">
+            <div id="solve" class="solve">
                 <h2>Какие проблемы мы помогаем решать?</h2>
                 <div class="help">
                     <div class="adaptation">
                         <h2>Адаптация в современном обществе</h2>
                         <img src="images/adaptation.svg" alt="adaptation">
                         <div class="hidden">
-                            <p>Мы стремимся помочь людям постарше в устранении столь распространённой проблемы, которые
-                                испытывают
-                                дискомфорт при коомуникациировании с младшим поколением, которое...</p>
+                            <p>Мы стремимся помочь людям постарше в устранении такой проблемы, как
+                                дискомфорт при коомуникациировании с младшим поколением.</p>
                             <a href="#">Читать</a>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         <img src="images/technologies.svg" alt="technologies">
                         <div class="hidden">
                             <p>Мы стремимся помочь людям постарше познать новый мир, чтобы они научились всему, что
-                                может и младшее поколение, тем самым, у них будет...</p>
+                                может и младшее поколение.</p>
                             <a href="#">Читать</a>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                             Если
                             не
                             действовать сейчас - то проблема будет развиваться и дальше, что никому не нужно.</p>
-                        <a href="#">Различия и схожести поколений</a>
+                        <a href="problems.html" target="_blank">Различия и схожести поколений</a>
                     </div>
                     <div class="right-block2">
                         <img src="images/questions.png" alt="questions">
@@ -193,26 +193,28 @@
     <div class="background">
         <footer>
 
-            <div class="container foot">
+            <div id="contacts" class="container foot">
                 <div>
                     <h2>Проблемы поколений</h2>
                     <p class="hotline">Горячая линия <br> +375 (33) 345-84-94</p>
                     <p class="email">problemy-pokoleniy@gmail.com</p>
                 </div>
-                <div>
-                    <nav class="foot-nav">
+                <div>     
+                    <nav>              
                         <ul>
                             <li><a href="#">Главная страница</a></li>
                             <li><a href="#">Проблемы</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
-                    </nav>
-                    <button class="eyef"><img src="images/eye.svg" alt="Глаз"></button>
+                    </nav>          
+                    <button class="eyef"></button>
                 </div>
 
             </div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
